@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/baseline_today_black_48"
+            android:title="@string/fragment_today" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_event_note_black_48"
+            android:title="@string/fragment_tasklist" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/baseline_event_available_black_48"
+            android:title="@string/fragment_completed_tasks" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/baseline_calendar_today_black_48"
+            android:title="@string/fragment_calendar" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/baseline_trending_up_black_48"
+            android:title="@string/fragment_report" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/fragment_send" />
+    </group>
+
+</menu>

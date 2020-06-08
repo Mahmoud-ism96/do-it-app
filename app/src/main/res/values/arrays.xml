@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These are the options displayed in the gender drop-down Spinner -->
+    <string-array name="array_priority">
+        <item>@string/default_priority</item>
+        <item>@string/low_priority</item>
+        <item>@string/mid_priority</item>
+        <item>@string/high_priority</item>
+    </string-array>
+
+    <string-array name="array_sorting">
+        <item>@string/date_created</item>
+        <item>@string/date</item>
+        <item>@string/priority</item>
+        <item>@string/sort_title</item>
+    </string-array>
+
+    <string-array name="first_day_labels">
+        <item>@string/settings_saturday</item>
+        <item>@string/settings_sunday</item>
+        <item>@string/settings_monday</item>
+        <item>@string/settings_tuesday</item>
+        <item>@string/settings_wednesday</item>
+        <item>@string/settings_thursday</item>
+        <item>@string/settings_friday</item>
+    </string-array>
+
+    <string-array name="first_day_values">
+        <item>@string/settings_saturday_value</item>
+        <item>@string/settings_sunday_value</item>
+        <item>@string/settings_monday_value</item>
+        <item>@string/settings_tuesday_value</item>
+        <item>@string/settings_wednesday_value</item>
+        <item>@string/settings_thursday_value</item>
+        <item>@string/settings_friday_value</item>
+    </string-array>
+
+</resources>

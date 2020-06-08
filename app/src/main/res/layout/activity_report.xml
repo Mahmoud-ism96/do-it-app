@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/report_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:padding="12dp"
+        android:text="Overall Productivity:"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/productivity"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            android:progressDrawable="@drawable/progress_bar" />
+
+        <TextView
+            android:id="@+id/productivity_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            tools:text="99%" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="18dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/report_left_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/left_button"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/report_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="January, 1970"
+
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/report_right_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/right_button"
+                android:clickable="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/report_calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="245dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:compactCalendarBackgroundColor="#FAFAFA"
+        app:compactCalendarCurrentDayBackgroundColor="#FAFAFA"
+        app:compactCalendarCurrentDayTextColor="#0288D1"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#03A9F4"
+        app:compactCalendarDisplayOtherMonthDays="true"
+        app:compactCalendarMultiEventIndicatorColor="#03A9F4"
+        app:compactCalendarOtherMonthDaysTextColor="#797979"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextColor="#000000"
+        app:compactCalendarTextSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/report_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/report_button_active"
+            android:fontFamily="sans-serif"
+            android:text="OVERALL"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/report_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/report_button_inactive"
+            android:fontFamily="sans-serif"
+            android:text="DAILY"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/report_details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/report_button_details"
+            android:fontFamily="sans-serif"
+            android:text="Report Details"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/report_weekly"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/report_button_inactive"
+            android:fontFamily="sans-serif"
+            android:text="WEEKLY"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/report_monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/report_button_inactive"
+            android:fontFamily="sans-serif"
+            android:text="MONTHLY"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

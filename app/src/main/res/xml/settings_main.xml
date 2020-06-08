@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <ListPreference
+        android:defaultValue="@string/settings_first_day_default"
+        android:entries="@array/first_day_labels"
+        android:entryValues="@array/first_day_values"
+        android:key="@string/settings_first_day_key"
+        android:title="@string/settings_first_day_label" />
+
+    <EditTextPreference
+        android:defaultValue="@string/settings_snooze_time_default"
+        android:inputType="number"
+        android:maxLength="2"
+        android:key="@string/settings_snooze_time_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/settings_snooze_time_label" />
+
+</PreferenceScreen>

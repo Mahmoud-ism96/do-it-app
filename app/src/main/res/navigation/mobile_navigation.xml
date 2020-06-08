@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.android.doit.ui.TodayFragment"
+        android:label="@string/fragment_today" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.android.doit.ui.TaskListFragment"
+        android:label="@string/fragment_tasklist" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.android.doit.ui.CompletedTaskFragment"
+        android:label="@string/fragment_completed_tasks" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.android.doit.ui.CalendarFragment"
+        android:label="@string/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.android.doit.ui.ReportFragment"
+        android:label="@string/fragment_report" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.android.doit.ui.SendFragment"
+        android:label="@string/fragment_send" />
+</navigation>
